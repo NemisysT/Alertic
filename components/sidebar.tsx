@@ -20,7 +20,6 @@ import { useRef } from "react";
 
 const links = [
   { href: "/", icon: <Home className="w-5 h-5" />, label: "Home" },
-  { href: "/alerts", icon: <AlertTriangle className="w-5 h-5" />, label: "Alerts" },
   { href: "/map", icon: <Map className="w-5 h-5" />, label: "Map" },
   { href: "/reports", icon: <FileText className="w-5 h-5" />, label: "Reports" },
   { href: "/weather", icon: <CloudSun className="w-5 h-5" />, label: "Weather" },

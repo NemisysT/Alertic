@@ -7,9 +7,10 @@ import Sidebar from "@/components/sidebar"
 import { InfoBox } from "@/components/info-box"
 import { ChatbotButton } from "@/components/chatbot-button"
 import { ChatbotModal } from "@/components/chatbot-modal"
-import { AlertCircle, Map, FileText, Bot } from "lucide-react"
+import { CloudFog, Map, FileText, Bot } from "lucide-react"
 import ShinyText from "@/components/ShinyText"
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision"
+
 
 export default function Home() {
   const [isChatbotOpen, setIsChatbotOpen] = useState(false)
@@ -65,11 +66,11 @@ export default function Home() {
 
         {/* Info Boxes Section */}
         <section className="z-30 w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 px-4 pb-16">
-          <Link href="/alerts">
+          <Link href="/weather">
             <InfoBox
-              icon={<AlertCircle className="h-6 w-6 text-red-500" />}
-              title="Alerts"
-              description="View active disaster alerts in your area"
+              icon={<CloudFog className="h-6 w-6 text-red-500" />}
+              title="Weather"
+              description="View weather predictions at your place of choice"
             />
           </Link>
           <Link href="/map">
