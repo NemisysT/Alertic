@@ -81,7 +81,7 @@ export default function Home() {
             />
           </Link>
           <Link href="/reports">
-            <InfoBox
+            <InfoBox  
               icon={<FileText className="h-6 w-6 text-green-500" />}
               title="Reports"
               description="Community submitted disaster reports"
