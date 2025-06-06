@@ -104,7 +104,7 @@ Here's what the user said: "${input}". Now, respond in a useful, to-the-point wa
           lowerInput.includes("emergency")
         ) {
           botResponse =
-            "If this is real-time danger, stop typing and call 911, bro. If it’s info you want, I’m here—just say what’s up.";
+            "If this is real-time danger, stop typing and call 112, bro. If it’s info you want, I’m here—just say what’s up.";
         } else {
           botResponse =
             "Hmm, I don’t have the deets on that yet. Wanna try rewording it, or should I connect you with someone who does?";
@@ -249,7 +249,7 @@ Here's what the user said: "${input}". Now, respond in a useful, to-the-point wa
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={handleKeyDown}
               placeholder="What's the situation? Spill it."
-              className="bg-gray-900 border-gray-700"
+              className="bg-gray-100 border-gray-700"
             />
             <Button
               onClick={handleSendMessage}

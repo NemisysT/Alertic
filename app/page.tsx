@@ -86,7 +86,7 @@ export default function Home() {
               title="Reports"
               description="Community submitted disaster reports"
             />
-          </Link>
+          </Link>     
           <Link href="/ai-help">
             <InfoBox
               icon={<Bot className="h-6 w-6 text-purple-500" />}
