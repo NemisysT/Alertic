@@ -46,7 +46,7 @@ export default function AIHelpPage() {
         <div className="flex-1 p-8 ml-0 mr-16">
           <div className="flex items-center gap-3 mb-6">
             <Bot className="h-8 w-8 text-purple-500" />
-            <h1 className="text-3xl font-bold">AI Emergency Help</h1>
+            <h1 className="text-3xl font-bold">Emergency Help</h1>
           </div>
 
           <p className="text-gray-400 mb-8 max-w-3xl">
