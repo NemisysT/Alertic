@@ -90,7 +90,7 @@ export default function Home() {
           <Link href="/ai-help">
             <InfoBox
               icon={<Bot className="h-6 w-6 text-purple-500" />}
-              title="AI Help"
+              title="Help"
               description="Get emergency tips and preparedness guides"
             />
           </Link>

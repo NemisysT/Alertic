@@ -23,7 +23,7 @@ const links = [
   { href: "/map", icon: <Map className="w-5 h-5" />, label: "Map" },
   { href: "/reports", icon: <FileText className="w-5 h-5" />, label: "Reports" },
   { href: "/weather", icon: <CloudSun className="w-5 h-5" />, label: "Weather" },
-  { href: "/ai-help", icon: <Bot className="w-5 h-5" />, label: "AI Help" },
+  { href: "/ai-help", icon: <Bot className="w-5 h-5" />, label: "Help" },
   
 ];
 
