@@ -34,6 +34,8 @@ export const BackgroundBeamsWithCollision = ({
     height: 0,
   })
   const animationRef = useRef<number>(0)
+  const beamsRef = useRef<any[]>([])
+  const particlesRef = useRef<any[]>([])
 
   useEffect(() => {
     const canvas = canvasRef.current
@@ -82,6 +84,7 @@ export const BackgroundBeamsWithCollision = ({
       })
     }
     setBeams(newBeams)
+    beamsRef.current = newBeams
 
     // Initialize particles
     if (!disableParticles) {
@@ -97,15 +100,12 @@ export const BackgroundBeamsWithCollision = ({
         })
       }
       setParticles(newParticles)
+      particlesRef.current = newParticles
     }
   }, [ctx, dimensions, beamCount, particleCount, beamColor1, beamColor2, beamColor3, particleColor, disableParticles])
 
   useEffect(() => {
     if (!ctx || beams.length === 0) return
-
-    // Use refs to store mutable state
-    const beamsRef = useRef(beams)
-    const particlesRef = useRef(particles)
 
     const animate = () => {
       ctx.clearRect(0, 0, dimensions.width, dimensions.height)
